@@ -1,4 +1,5 @@
 .caixa {
+<<<<<<< HEAD
     color: white;
     display: inline-block;
     line-height: 50px;
@@ -25,3 +26,28 @@
   .border {
     border: 5px solid black;
   }
+=======
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
+
+.padding {
+  padding: 20px; 
+}
+
+.margin {
+  margin: 30px;
+}
+
+.border {
+  border: 5px solid black;
+}
+>>>>>>> 9264d7aa022b8f0ceeb73125f11c600030cb45db
