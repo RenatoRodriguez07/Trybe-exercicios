@@ -1,14 +1,22 @@
-const student = 101;
+// const comida = 'pão na chapa';
+// const bebida = 'cafezinho com leite';
 
-if (student >= 80 && student <= 100){
-    console.log("Parabéns, você foi aprovado");
-} 
-else if (student < 80 && student >= 60){
-    console.log("Você está na nossa lista de espera");
-}
-else if (student < 60 && student >=0){
-    console.log("Você foi reprovado");
-}
-else {
-    console.log("Não se aplica");
-}
+// if (bebida === 'cafezinho' && comida === 'pão na chapa') {
+//   console.log('Muito obrigado pela refeição :)');
+// } else {
+//   console.log('Acho que houve um engano com meu pedido');
+// }
+
+// const conditionOne = true;
+// const conditionTwo = false;
+
+// console.log(conditionOne && conditionTwo);
+
+const cenouras = true;
+const leite = true;
+const arroz = true;
+const feijao = true;
+
+const listaDeCompras = cenouras && leite && arroz && feijao;
+
+console.log(listaDeCompras);
