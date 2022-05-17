@@ -1,8 +1,14 @@
-const base = 5;
-let height = 8;
+const student = 101;
 
-const area = base * height;
-
-const perimeter = base + base + height + height;
-
-console.log(perimeter);
+if (student >= 80 && student <= 100){
+    console.log("Parabéns, você foi aprovado");
+} 
+else if (student < 80 && student >= 60){
+    console.log("Você está na nossa lista de espera");
+}
+else if (student < 60 && student >=0){
+    console.log("Você foi reprovado");
+}
+else {
+    console.log("Não se aplica");
+}
