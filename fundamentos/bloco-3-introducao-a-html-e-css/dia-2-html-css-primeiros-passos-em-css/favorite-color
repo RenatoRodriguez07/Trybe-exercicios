@@ -1,0 +1,40 @@
+h1 {
+      font-size: 65px;
+      color: orange;
+      font-family: sans-serif;
+      text-decoration: underline;
+    }
+    ul {
+      background-color: aquamarine;
+    }
+    .cor-fundo {
+      background-color: purple;
+      color: yellow;
+    }
+    p {
+      font-weight: 600;
+      font-size: 3em;
+      text-align: center;
+    }
+    body {
+      font-size: 16px;
+      font-style: italic;
+    }
+    li {
+      line-height: 20px;
+    }
+    #color-white{
+      background-color: white;
+    }
+    #color-green{
+      background-color: green;
+    }
+    #color-red{
+      background-color: red;
+    }
+    #color-black{
+      background-color: black;
+    }
+    #color-gray{
+      background-color: gray;
+    }
