@@ -1,18 +1,24 @@
-// // 1.
-// document.createElement('h1');
-// let createH1 = document.createElement('h1');
-// createH1.innerText('Exercicio 5.2 - JavaScript DOM');
+// 1. Crie um irmão para elementoOndeVoceEsta.
+const pai = document.getElementById('pai');
+const irmao = document.createElement('section');
+irmao.id = 'irmaoOndeVoceEsta';
+pai.appendChild(irmao);
 
-// let container = document.getElementsByTagName('body');
-// parent.createH1('h1');
+// 2. Crie um filho para elementoOndeVoceEsta.
 
-const ondeVcEsta = document.querySelector('#elementoOndeVoceEsta');
-const pai = ondeVcEsta.parentElement;
-pai.style.color = 'blue';
-const neto1 = ondeVcEsta.firstElementChild;
-neto1 = 'Hello!';
-const primeiroFilho = pai.firstElementChild;
-const primeiroFilho2 = ondeVcEsta.previousElementSibling;
-const textElement = ondeVcEsta.nextSibling;
-const terceiroFilho = ondeVcEsta.nextElementSibling;
-const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+const filhoOndeVoceEsta = document.createElement('div');
+filhoOndeVoceEsta.id = 'filhoOndeVoceEsta';
+ondeVoceEsta.appendChild(filhoOndeVoceEsta);
+
+// 3. Crie um filho para primeiroFilhoDoFilho.
+
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+const filhoPrimeiro = document.createElement('div');
+filhoPrimeiro.id = 'filhoPrimeiroFilhoDoFilho';
+primeiroFilhoDoFilho.appendChild(filhoPrimeiro);
+
+// 4. A partir desse filho criado, acesse terceiroFilho.
+
+const terceiroFilho = filhoPrimeiro.parentElement.parentElement.nextElementSibling;
+console.log(terceiroFilho);
